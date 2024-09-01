@@ -37,6 +37,46 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+.custom-card {
+  flex: 0 0 20%; /* Increase the width percentage */
+  max-width: 20%; /* Increase the width percentage */
+}
+
+.courses-item {
+  height: 400px; /* Maintain uniform card height */
+}
+
+.courses-item img {
+  max-height: 200px; /* Ensure image fits within the card */
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .custom-card {
+    flex: 0 0 24%; /* Adjust for smaller screens if needed */
+    max-width: 24%;
+  }
+}
+
+@media (max-width: 992px) {
+  .custom-card {
+    flex: 0 0 48%; /* Adjust for medium screens */
+    max-width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-card {
+    flex: 0 0 100%; /* Adjust for small screens */
+    max-width: 100%;
+  }
+}
+
+
+
+    </style>
   </head>
 
   <body>
@@ -171,7 +211,12 @@
     </div>
     <!-- Page Header End -->
 
+
+
+
     <!-- Courses Start -->
+<!-- 
+
     <div class="container-xxl py-6">
       <div class="container">
         <div
@@ -289,7 +334,155 @@
           </div>
         </div>
       </div>
+    </div> -->
+    <!-- Courses Start -->
+
+
+    <div class="container-xxl py-6">
+      <div class="container">
+        <div
+          class="text-center mx-auto mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 500px"
+        >
+          <h6 class="text-primary text-uppercase mb-2">Trending Courses</h6>
+          <h1 class="display-6 mb-4">
+            Our Courses Upskill You With Driving Training
+          </h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-2 col-md-6 wow fadeInUp custom-card" data-wow-delay="0.1s">
+            <div class="courses-item d-flex flex-column bg-light overflow-hidden h-100">
+              <div class="text-center p-4 pt-0">
+                <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">$99</div>
+                <h5 class="mb-3">Automatic Car Lessons</h5>
+                <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
+                <ol class="breadcrumb justify-content-center mb-0">
+                  <li class="breadcrumb-item small">
+                    <i class="fa fa-signal text-primary me-2"></i>Beginner
+                  </li>
+                  <li class="breadcrumb-item small">
+                    <i class="fa fa-calendar-alt text-primary me-2"></i>3 Week
+                  </li>
+                </ol>
+              </div>
+              <div class="position-relative mt-auto">
+                <img class="img-fluid" src="img/courses/course-1.png" alt="" />
+                <div class="courses-overlay">
+                  <a class="btn btn-outline-primary border-2" href="">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat similar blocks for other cards -->
+
+          <div class="col-lg-2 col-md-6 wow fadeInUp custom-card" data-wow-delay="0.1s">
+            <div class="courses-item d-flex flex-column bg-light overflow-hidden h-100">
+              <div class="text-center p-4 pt-0">
+                <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">$99</div>
+                <h5 class="mb-3">Automatic Car Lessons</h5>
+                <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
+                <ol class="breadcrumb justify-content-center mb-0">
+                  <li class="breadcrumb-item small">
+                    <i class="fa fa-signal text-primary me-2"></i>Beginner
+                  </li>
+                  <li class="breadcrumb-item small">
+                    <i class="fa fa-calendar-alt text-primary me-2"></i>3 Week
+                  </li>
+                </ol>
+              </div>
+              <div class="position-relative mt-auto">
+                <img class="img-fluid" src="img/courses/course-1.png" alt="" />
+                <div class="courses-overlay">
+                  <a class="btn btn-outline-primary border-2" href="">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 wow fadeInUp custom-card" data-wow-delay="0.1s">
+            <div class="courses-item d-flex flex-column bg-light overflow-hidden h-100">
+              <div class="text-center p-4 pt-0">
+                <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">$99</div>
+                <h5 class="mb-3">Automatic Car Lessons</h5>
+                <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
+                <ol class="breadcrumb justify-content-center mb-0">
+                  <li class="breadcrumb-item small">
+                    <i class="fa fa-signal text-primary me-2"></i>Beginner
+                  </li>
+                  <li class="breadcrumb-item small">
+                    <i class="fa fa-calendar-alt text-primary me-2"></i>3 Week
+                  </li>
+                </ol>
+              </div>
+              <div class="position-relative mt-auto">
+                <img class="img-fluid" src="img/courses/course-1.png" alt="" />
+                <div class="courses-overlay">
+                  <a class="btn btn-outline-primary border-2" href="">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 wow fadeInUp custom-card" data-wow-delay="0.1s">
+            <div class="courses-item d-flex flex-column bg-light overflow-hidden h-100">
+              <div class="text-center p-4 pt-0">
+                <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">$99</div>
+                <h5 class="mb-3">Automatic Car Lessons</h5>
+                <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
+                <ol class="breadcrumb justify-content-center mb-0">
+                  <li class="breadcrumb-item small">
+                    <i class="fa fa-signal text-primary me-2"></i>Beginner
+                  </li>
+                  <li class="breadcrumb-item small">
+                    <i class="fa fa-calendar-alt text-primary me-2"></i>3 Week
+                  </li>
+                </ol>
+              </div>
+              <div class="position-relative mt-auto">
+                <img class="img-fluid" src="img/courses/course-1.png" alt="" />
+                <div class="courses-overlay">
+                  <a class="btn btn-outline-primary border-2" href="">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 wow fadeInUp custom-card" data-wow-delay="0.1s">
+            <div class="courses-item d-flex flex-column bg-light overflow-hidden h-100">
+              <div class="text-center p-4 pt-0">
+                <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">$99</div>
+                <h5 class="mb-3">Automatic Car Lessons</h5>
+                <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
+                <ol class="breadcrumb justify-content-center mb-0">
+                  <li class="breadcrumb-item small">
+                    <i class="fa fa-signal text-primary me-2"></i>Beginner
+                  </li>
+                  <li class="breadcrumb-item small">
+                    <i class="fa fa-calendar-alt text-primary me-2"></i>3 Week
+                  </li>
+                </ol>
+              </div>
+              <div class="position-relative mt-auto">
+                <img class="img-fluid" src="img/courses/course-1.png" alt="" />
+                <div class="courses-overlay">
+                  <a class="btn btn-outline-primary border-2" href="">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
     </div>
+    
+
+<!-- Courses End -->
+
+
+
+
     <!-- Courses End -->
 
     <!-- Footer Start -->

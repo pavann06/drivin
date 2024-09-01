@@ -349,3 +349,7 @@
 .copyright a:hover {
     color: var(--light);
 }
+
+#card{
+    width: 250px !important;
+}
